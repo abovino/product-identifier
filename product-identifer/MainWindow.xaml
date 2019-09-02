@@ -100,14 +100,23 @@
                     <RowDefinition Height="5" />
                 </Grid.RowDefinitions>
 
-                <StackPanel Orientation="Horizontal"  Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="4">
+                <StackPanel Orientation="Horizontal"  Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4">
                     <RadioButton GroupName="plantRadio" Margin="5, 5" IsChecked="True">Camden, NJ</RadioButton>
                     <RadioButton GroupName="plantRadio" Margin="5, 5">Minneapolis, MN</RadioButton>
                     <RadioButton GroupName="plantRadio" Margin="5, 5">Houston, TX</RadioButton>
                     <RadioButton GroupName="plantRadio" Margin="5, 5">Reno, NV</RadioButton>
                 </StackPanel>
+
+                <DataGrid Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4" Height="250" AutoGenerateColumns="False">
+                    
+                </DataGrid>
             </Grid>
         </GroupBox>
+
+        
+        <Image Grid.Column="3" Grid.Row="1" Grid.RowSpan="7" 
+               Height="392" Margin="36,0,36,79" VerticalAlignment="Bottom" Stretch="Fill"
+               Source="H:\C#\product-identifer\product-identifer\Resources\PG113090.jpg" />
 
     </Grid>
 </Window>
