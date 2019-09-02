@@ -75,12 +75,37 @@
                 <Label Grid.Row="2" Grid.Column="3" Content="Hierarchy:" FontSize="14" Margin="0,10"/>
                 <TextBox Grid.Row="2" Grid.Column="4" Margin="3,10" Width="100" FontSize="14" TextAlignment="Center" />
 
-                <!--<StackPanel Orientation="Horizontal"  Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2">
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Inventory" Grid.Row="4" Grid.Column="1" Margin="0,5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal"  Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="4">
                     <RadioButton GroupName="plantRadio" Margin="5, 5" IsChecked="True">Camden, NJ</RadioButton>
                     <RadioButton GroupName="plantRadio" Margin="5, 5">Minneapolis, MN</RadioButton>
                     <RadioButton GroupName="plantRadio" Margin="5, 5">Houston, TX</RadioButton>
                     <RadioButton GroupName="plantRadio" Margin="5, 5">Reno, NV</RadioButton>
-                </StackPanel>-->
+                </StackPanel>
             </Grid>
         </GroupBox>
 
