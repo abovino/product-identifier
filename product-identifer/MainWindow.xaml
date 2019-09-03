@@ -110,7 +110,7 @@
                     <RadioButton x:Name="_5010" GroupName="plantRadio" Margin="5, 5">Reno, NV</RadioButton>
                 </StackPanel>
 
-                <DataGrid Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4" Height="250" AutoGenerateColumns="False">
+                <DataGrid x:Name="stockGrid" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4" Height="250" AutoGenerateColumns="False">
                     
                 </DataGrid>
             </Grid>
