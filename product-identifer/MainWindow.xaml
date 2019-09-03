@@ -111,7 +111,13 @@
                 </StackPanel>
 
                 <DataGrid x:Name="stockGrid" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4" Height="250" AutoGenerateColumns="False">
-                    
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="85" Binding="{Binding qty}" Header="Qty"/>
+                        <DataGridTextColumn Width="75" Binding="{Binding packSize}" Header="Pack Size"/>
+                        <DataGridTextColumn Width="70" Binding="{Binding packs}" Header="Packs"/>
+                        <DataGridTextColumn Width="70" Binding="{Binding plant}" Header="Plant Id"/>
+                        <DataGridTextColumn Width="80" Binding="{Binding binLocation}" Header="Bin Location"/>
+                    </DataGrid.Columns>
                 </DataGrid>
             </Grid>
         </GroupBox>
