@@ -24,5 +24,14 @@ namespace product_identifer
         {
             InitializeComponent();
         }
+
+        private void handleSearch(object sender, RoutedEventArgs e)
+        {
+            Product product = new Product(upcTxt.Text);
+
+            MessageBox.Show(product.materialNo);
+
+            stockGrid.ItemsSource = product.stock;
+        }
     }
 }
