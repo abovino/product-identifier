@@ -27,10 +27,7 @@ namespace product_identifer
 
         private void handleSearch(object sender, RoutedEventArgs e)
         {
-            Product product = new Product(upcTxt.Text);
-
-
-            stockDataGrid.ItemsSource = product.stock;
+            
         }
     }
 }
