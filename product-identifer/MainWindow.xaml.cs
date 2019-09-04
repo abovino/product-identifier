@@ -29,9 +29,8 @@ namespace product_identifer
         {
             Product product = new Product(upcTxt.Text);
 
-            MessageBox.Show(product.materialNo);
 
-            stockGrid.ItemsSource = product.stock;
+            stockDataGrid.ItemsSource = product.stock;
         }
     }
 }
