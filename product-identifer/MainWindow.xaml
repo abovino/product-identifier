@@ -110,13 +110,14 @@
                     <RadioButton x:Name="_5010" GroupName="plantRadio" Margin="5, 5">Reno, NV</RadioButton>
                 </StackPanel>
 
-                <DataGrid x:Name="stockGrid" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4" Height="250" AutoGenerateColumns="False">
+                <DataGrid x:Name="stockDataGrid" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4" Height="250" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeColumns="False" CanUserResizeRows="False">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Width="85" Binding="{Binding qty}" Header="Qty"/>
-                        <DataGridTextColumn Width="75" Binding="{Binding packSize}" Header="Pack Size"/>
-                        <DataGridTextColumn Width="70" Binding="{Binding packs}" Header="Packs"/>
-                        <DataGridTextColumn Width="70" Binding="{Binding plant}" Header="Plant Id"/>
-                        <DataGridTextColumn Width="80" Binding="{Binding binLocation}" Header="Bin Location"/>
+                        <DataGridTextColumn Width="55" Binding="{Binding qty}" Header="Qty"/>
+                        <DataGridTextColumn Width="45" Binding="{Binding uom}" Header="UOM"/>
+                        <DataGridTextColumn Width="65" Binding="{Binding packSize}" Header="Pack Size"/>
+                        <DataGridTextColumn Width="50" Binding="{Binding packs}" Header="Packs"/>
+                        <DataGridTextColumn Width="65" Binding="{Binding plantId}" Header="Plant Id"/>
+                        <DataGridTextColumn Width="75" Binding="{Binding binLocation}" Header="Bin Location"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>
