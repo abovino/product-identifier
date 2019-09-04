@@ -27,7 +27,20 @@ namespace product_identifer
 
         private void handleSearch(object sender, RoutedEventArgs e)
         {
-            
+            var upc = upcTxt.Text;
+            var context = new ProductModel();
+
+            var query = from p in context.products
+                        where p.upc == upc
+                        select p;
+
+            var selectedProduct = query.FirstOrDefault<Product>();
+
+            descriptionTxt.Text = selectedProduct.description;
+            hierarchyIdTxt.Text = selectedProduct.hierarchy_id;
+
+
+            //MessageBox.Show("hi");
         }
     }
 }
