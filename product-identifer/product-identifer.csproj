@@ -74,14 +74,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Inventory.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Plant.cs" />
     <Compile Include="Product.cs" />
-    <Compile Include="ProductModel.cs" />
+    <Compile Include="ProductsModel.cs" />
+    <Compile Include="Product_Hierarchies.cs" />
+    <Compile Include="Product_Images.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
