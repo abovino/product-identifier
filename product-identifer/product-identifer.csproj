@@ -83,6 +83,7 @@
   <ItemGroup>
     <Compile Include="Plant.cs" />
     <Compile Include="Product.cs" />
+    <Compile Include="ProductInfo.cs" />
     <Compile Include="ProductsModel.cs" />
     <Compile Include="Product_Hierarchies.cs" />
     <Compile Include="Product_Images.cs" />
