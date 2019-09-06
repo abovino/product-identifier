@@ -53,7 +53,7 @@ namespace product_identifer
             this.descriptionTxt.Text = product.description;
             this.hierarchyIdTxt.Text = product.hierarchy_id;
             this.hierarchyTxt.Text = product.product_hierarchies.hierarchy_description;
-            this.imgContainer.Source = new BitmapImage(new Uri($"H:\\C#\\product-identifer\\product-identifer\\Resources\\{product.product_images.file_name}", UriKind.Absolute));
+            this.imgContainer.Source = new BitmapImage(new Uri($"H:\\C#\\product-identifier\\product-identifier\\Resources\\{product.product_images.file_name}", UriKind.Absolute));
 
         }
     }

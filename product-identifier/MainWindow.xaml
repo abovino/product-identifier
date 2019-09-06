@@ -126,7 +126,7 @@
         
         <Image x:Name="imgContainer" Grid.Column="3" Grid.Row="1" Grid.RowSpan="7" 
                Height="392" Margin="36,0,36,79" VerticalAlignment="Bottom" Stretch="Fill"
-               Source="H:\C#\product-identifer\product-identifer\Resources\PG113090.jpg" />
+               Source="H:\C#\product-identifier\product-identifier\Resources\PG113090.jpg" />
 
     </Grid>
 </Window>
