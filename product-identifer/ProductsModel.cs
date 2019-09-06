@@ -12,11 +12,11 @@ namespace product_identifer
         {
         }
 
-        public virtual DbSet<Inventory> inventories { get; set; }
-        public virtual DbSet<Plant> plants { get; set; }
-        public virtual DbSet<Product_Hierarchies> product_hierarchies { get; set; }
-        public virtual DbSet<Product_Images> product_images { get; set; }
-        public virtual DbSet<Product> products { get; set; }
+        public virtual DbSet<Inventory> Inventories { get; set; }
+        public virtual DbSet<Plant> Plants { get; set; }
+        public virtual DbSet<Product_Hierarchies> Product_Hierarchies { get; set; }
+        public virtual DbSet<Product_Images> Product_Images { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
