@@ -42,5 +42,6 @@ namespace product_identifer
         public virtual Product_Hierarchies product_hierarchies { get; set; }
 
         public virtual Product_Images product_images { get; set; }
+
     }
 }
