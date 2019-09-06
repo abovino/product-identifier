@@ -29,26 +29,32 @@ namespace product_identifer
         {
             var upc = upcTxt.Text;
 
+            Product product = new Product();
+
             using (var context = new ProductsModel())
             {
-                var productInfo = (from products in context.products
-                                   join productImgs in context.product_images
-                                     on products.material_no equals productImgs.material_no
-                                   join productHierarchies in context.product_hierarchies
-                                     on products.hierarchy_id equals productHierarchies.hierarchy_id
-                                   where products.upc == upc
-                                   select new
-                                   {
-                                       products.material_no,
-                                       products.upc,
-                                       products.description,
-                                       products.uom,
-                                       products.hierarchy_id,
-                                       productHierarchies.hierarchy_description,
-                                       productImgs.file_name,
-                                   }).FirstOrDefault();
+                product = context.Products.Where(p => p.upc == upc).SingleOrDefault();
 
+                if (product != null)
+                {
+                    // Update UI
+                    UpdateUi(product);
+                }
+                else
+                {
+                    MessageBox.Show("Product not found");
+                }
             }
+            
+        }
+
+        public void UpdateUi(Product product)
+        {
+            this.descriptionTxt.Text = product.description;
+            this.hierarchyIdTxt.Text = product.hierarchy_id;
+            this.hierarchyTxt.Text = product.product_hierarchies.hierarchy_description;
+            this.imgContainer.Source = new BitmapImage(new Uri($"H:\\C#\\product-identifer\\product-identifer\\Resources\\{product.product_images.file_name}", UriKind.Absolute));
+
         }
     }
 }
