@@ -103,11 +103,11 @@
                     <RowDefinition Height="5" />
                 </Grid.RowDefinitions>
 
-                <StackPanel Orientation="Horizontal"  Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4">
-                    <RadioButton x:Name="_8010" GroupName="plantRadio" Margin="5, 5" IsChecked="True">Camden, NJ</RadioButton>
-                    <RadioButton x:Name="_7010" GroupName="plantRadio" Margin="5, 5">Minneapolis, MN</RadioButton>
-                    <RadioButton x:Name="_6010" GroupName="plantRadio" Margin="5, 5">Houston, TX</RadioButton>
-                    <RadioButton x:Name="_5010" GroupName="plantRadio" Margin="5, 5">Reno, NV</RadioButton>
+                <StackPanel x:Name="plantRadioGroup" Orientation="Horizontal"  Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4">
+                    <RadioButton x:Name="_8010" GroupName="plantRadios" Margin="5, 5" IsChecked="True">Camden, NJ</RadioButton>
+                    <RadioButton x:Name="_7010" GroupName="plantRadios" Margin="5, 5">Minneapolis, MN</RadioButton>
+                    <RadioButton x:Name="_6010" GroupName="plantRadios" Margin="5, 5">Houston, TX</RadioButton>
+                    <RadioButton x:Name="_5010" GroupName="plantRadios" Margin="5, 5">Reno, NV</RadioButton>
                 </StackPanel>
 
                 <DataGrid x:Name="stockDataGrid" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4" Height="250" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeColumns="False" CanUserResizeRows="False">
@@ -116,8 +116,8 @@
                         <DataGridTextColumn Width="45" Binding="{Binding uom}" Header="UOM"/>
                         <DataGridTextColumn Width="65" Binding="{Binding packSize}" Header="Pack Size"/>
                         <DataGridTextColumn Width="50" Binding="{Binding packs}" Header="Packs"/>
-                        <DataGridTextColumn Width="65" Binding="{Binding plantId}" Header="Plant Id"/>
-                        <DataGridTextColumn Width="75" Binding="{Binding binLocation}" Header="Bin Location"/>
+                        <DataGridTextColumn Width="65" Binding="{Binding plant_id}" Header="Plant Id"/>
+                        <DataGridTextColumn Width="75" Binding="{Binding bin_location}" Header="Bin Location"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>
