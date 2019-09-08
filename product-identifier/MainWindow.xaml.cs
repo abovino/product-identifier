@@ -30,6 +30,11 @@ namespace product_identifer
             var upc = upcTxt.Text;
             var plant = plantRadioGroup.Children.OfType<RadioButton>().FirstOrDefault(r => r.IsChecked.HasValue && r.IsChecked.Value).Name.Replace("_", "");
 
+            if (upc == "")
+            {
+                return;
+            }
+
             Product product = new Product();
             List<Inventory> inventory = new List<Inventory>();
 
